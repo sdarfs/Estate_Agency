@@ -1,1 +1,1 @@
-CREATE DATABASE ned;
+CREATE DATABASE postgres;
