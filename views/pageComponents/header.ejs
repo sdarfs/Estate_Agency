@@ -1,0 +1,20 @@
+<header class="bg-white w-full py-4 px-4">
+    <div class="container mx-auto flex justify-between">
+        <div class="flex">
+            <span class="text-xl font-semibold mr-40 leading-6">Недвижин</span>
+            <nav class="flex gap-10 align-bottom">
+                <a href="/" class="font-medium leading-6">Ваши запросы</a>
+                <% if (isWorker) { %>
+                    <a href="/requests" class="font-medium leading-6">Все запросы</a>
+                <% } %>
+                <% if (!isWorker) { %>
+                <a href="/requests/new" class="font-medium leading-6 text-blue-500">Создать запрос</a>
+                <% } %>
+                <a href="/houses/new" class="font-medium leading-6 text-blue-500">Добавить объект</a>
+                <% if (isWorker) { %>
+                <a href="/registration/worker" class="font-medium leading-6">Новый сотрудник</a>
+                <% } %>
+            </nav>
+        </div>
+    </div>
+</header>
